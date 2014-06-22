@@ -1,8 +1,13 @@
 {
-  "name": "light",
+  "name": "wheat",
   "version": "0.0.1",
-  "scripts": {
-    "start": "node ./bin/www"
+  "author": {
+    "name": "Rajiv Kilaparti",
+    "email": "rkilaparti@apigee.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/r8k/wheat"
   },
   "dependencies": {
     "express": "4.0.0",
@@ -24,5 +29,9 @@
     "grunt-contrib-concat": "0.4.0",
     "grunt-contrib-uglify": "0.5.0",
     "grunt-contrib-cssmin": "0.10.0"
-  }
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT"
 }
