@@ -26,7 +26,7 @@ ifdef GRUNT
 	@echo -e "$(INFO) Found Grunt @$(GRUNT)"
 else
 	@echo -e "$(INFO) Did not find Grunt. Installing it ..."
-	@npm install grunt@00.4.5 -g
+	@npm install grunt@0.4.5 -g
 endif
 
 
