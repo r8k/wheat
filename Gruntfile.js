@@ -24,6 +24,10 @@ module.exports = function(grunt) {
       logs: {
         src: 'public/js/logs.js',
         dest: 'public/dist/js/logs.min.js'
+      },
+      socket: {
+        src: 'node_modules/socket.io/node_modules/socket.io-client/socket.io.js',
+        dest: 'node_modules/socket.io/node_modules/socket.io-client/socket.io.js'
       }
     }
   });

@@ -11,6 +11,7 @@
 var express    = require('express');
 var passport   = require('passport');
 var bodyparser = require('body-parser');
+var compresser = require('compression');
 var session    = require('express-session');
 
 
@@ -85,6 +86,7 @@ var routes = require('./lib/routes')(io);
  * @type `express`
  */
 
+app.use(compresser());
 app.use(bodyparser());
 app.set('views', views);
 app.set('view engine', 'jade');
