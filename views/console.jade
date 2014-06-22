@@ -1,0 +1,17 @@
+doctype html5
+html
+  
+  head
+    title Wheat Console
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', href='dist/css/css.min.css')
+  
+  body
+    button#clear.g-button.blue Clear
+    #info.trebuchet
+    ol#tail.monospace.selection
+    script(src='js/head.js')
+    script.
+      head.js("/socket.io/socket.io.js")
+      .js("js/jquery.min.js")
+      .js("dist/js/logs.min.js");

@@ -1,0 +1,27 @@
+
+extends layout
+
+block content
+    #login-container
+        form( method="post")#login-form.well.span4
+            h1 Hello!
+            p.subheading Login to your Wheat Account
+            label Username 
+            input(type="text", name="username", id='user-tf').span4.required
+            label Password
+            input(type="password", name="password", id='pass-tf').span4.required
+            label Application
+            input(type="text", name="appid", id='app-tf').span4.required
+            button(type="submit")#btn-login.btn.btn-primary
+                i.icon-lock.icon-white
+                | Sign in
+            label#remember-me.checkbox Remember Me
+                input(type="checkbox", checked='checked')
+            div.clear-fix
+            hr
+            div.btm-links
+                a(href='#')#forgot-password Forgot Your Password?
+                a(href='#')#create-account Create An Account
+
+block scripts
+    script(src='js/jquery.min.js')
